@@ -1,0 +1,31 @@
+django-cors-headers
+django-crispy-forms
+django-formtools
+django-import-export
+django-reversion
+djangorestframework
+djangorestframework-jwt
+djangorestframework-simplejwt
+Keras
+Markdown
+numpy
+opencv-python
+Pillow
+PyJWT
+scipy
+tensorboard
+tensorflow
+django
+send_mail
+pyyaml
+paddlepaddle
+paddlehub
+simplejson
+matplotlib
+
+
+
+# to solve the problme of requirement between xadmin and something
+# However, in the new version, xadmin is not used. Please do not install.
+# pip install https://codeload.github.com/sshwsfc/xadmin/zip/django2 -i https://pypi.douban.com/simple
+# from import_export.admin import DEFAULT_FORMATS, ImportMixin, ImportExportMixinBase

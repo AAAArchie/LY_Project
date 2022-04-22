@@ -1,0 +1,11 @@
+# 这里是代码管理，排除以下内容不进行管理
+/image
+/trained_model
+/media
+/.idea
+/db.sqlite3
+/frontend
+/logs
+
+/roi.jpg
+/humanseg_output
