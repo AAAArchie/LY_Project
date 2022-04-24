@@ -2,18 +2,17 @@
   <!--vue3中的模板结构可以没有根标签-->
   <div id="app">
     <el-container>
-      <el-col :xs="40" :sm="24">
+      <el-col :xs="40" :sm="24" >
         <el-header>
           <el-menu :default-active="$route.path" class="el-menu-vertical-demo" mode="horizontal" router>
          <!--    <el-menu-item index="/Introduction"><i class="el-icon-user-solid"></i><span
                 class="hidden-sm-and-down">项目介绍</span>
             </el-menu-item>-->
 
-         <!--    <el-menu-item index="/"><i class="el-icon-house"></i><span class="hidden-sm-and-down">主页</span>
+          <el-menu-item index="/"><i class="el-icon-house"></i><span class="hidden-sm-and-down">主页</span>
             </el-menu-item>
-                                <el-menu-item  index="/Gather" class="hidden-sm-and-down"><i class="el-icon-edit"></i><span class="hidden-sm-and-down">收集图片</span></el-menu-item>-->
-          <!--  <el-menu-item index="/Upload">
-              <i class="el-icon-camera-solid"></i><span class="hidden-sm-and-down">快速识别</span>
+          <!--<el-menu-item  index="/Gather" class="hidden-sm-and-down"><i class="el-icon-edit"></i><span class="hidden-sm-and-down">收集图片</span></el-menu-item>-->
+          <!--  <el-menu-item index="/Upload"> <i class="el-icon-camera-solid"></i><span class="hidden-sm-and-down">快速识别</span>
             </el-menu-item>-->
             <el-menu-item index="/Recognition">
               <i class="el-icon-crop"></i><span class="hidden-sm-and-down">服饰识别</span>
@@ -29,7 +28,9 @@
             </el-menu-item>
             <el-menu-item index="/Login" v-if="!authState.isLogin">登录</el-menu-item>
             <el-menu-item index="/Register" v-if="!authState.isLogin">注册</el-menu-item>
-            <el-menu-item @click="f登出" v-if="authState.isLogin">登出</el-menu-item>
+            <el-menu-item @click="f登出" v-if="authState.isLogin">退出登录</el-menu-item>
+            <el-menu-item index="/Uv">
+              <el-button :plain="true" @click="Uv">访客量</el-button></el-menu-item>
           </el-menu>
         </el-header>
       </el-col>
@@ -58,6 +59,7 @@ import {computed, defineComponent} from "vue";
 import 'element-plus/lib/theme-chalk/display.css';
 import router from "./utils/router";
 import clients from "./utils/clients";
+
 
 export default defineComponent({
   name: 'Home',

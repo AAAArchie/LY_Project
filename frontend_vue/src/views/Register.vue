@@ -1,5 +1,4 @@
 <template>
-
   <div id="signup">
     <el-divider content-position="center"><h1>注册账号</h1></el-divider>
     <el-row>
@@ -18,7 +17,6 @@
       </el-col>
     </el-row>
   </div>
-
 </template>
 
 <script lang="ts">
